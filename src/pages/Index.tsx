@@ -1,7 +1,7 @@
-import TraceabilityDashboard from "@/components/TraceabilityDashboard";
+import EnhancedTraceabilityDashboard from "@/components/EnhancedTraceabilityDashboard";
 
 const Index = () => {
-  return <TraceabilityDashboard />;
+  return <EnhancedTraceabilityDashboard />;
 };
 
 export default Index;

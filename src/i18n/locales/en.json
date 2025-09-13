@@ -1,0 +1,98 @@
+{
+  "app": {
+    "title": "Blockchain Traceability",
+    "subtitle": "Track products through the entire supply chain with immutable blockchain records"
+  },
+  "nav": {
+    "search": "Search Batch",
+    "create": "Create Batch",
+    "qr": "QR Scanner",
+    "farmer": "Farmer",
+    "processor": "Processor", 
+    "distributor": "Distributor",
+    "retailer": "Retailer",
+    "consumer": "Consumer"
+  },
+  "search": {
+    "title": "Search Batch History",
+    "subtitle": "Enter a batch ID to view its complete supply chain journey",
+    "placeholder": "Enter batch ID (e.g., BATCH-FARM-001)",
+    "button": "Search",
+    "searching": "Searching...",
+    "transactions": "Transactions",
+    "journey": "Supply Chain Journey"
+  },
+  "create": {
+    "title": "Create New Batch",
+    "subtitle": "Start a new supply chain journey",
+    "button": "Create Batch on Blockchain",
+    "success": "Batch created successfully"
+  },
+  "qr": {
+    "title": "QR Code Scanner",
+    "subtitle": "Scan QR codes to quickly access product traceability data",
+    "enable": "Enable Camera",
+    "scanning": "Scanning for QR codes...",
+    "generate": "Generate QR Code"
+  },
+  "fields": {
+    "batchId": "Batch ID",
+    "farmId": "Farm ID", 
+    "cropType": "Crop Type",
+    "quantity": "Quantity (kg)",
+    "harvestDate": "Harvest Date",
+    "sellingPrice": "Selling Price",
+    "costPrice": "Cost Price",
+    "location": "Geographic Location",
+    "processorId": "Processor ID",
+    "processTypes": "Process Types",
+    "inputBatch": "Input Batch",
+    "outputQuantity": "Output Quantity",
+    "processingDate": "Processing Date",
+    "distributorId": "Distributor ID",
+    "dispatchDate": "Dispatch Date",
+    "transportMode": "Transport Mode",
+    "destination": "Destination",
+    "expiryDate": "Expiry Date",
+    "retailerId": "Retailer ID",
+    "shelfDate": "Shelf Date",
+    "retailPrice": "Retail Price",
+    "retailLocation": "Retail Location",
+    "purchaseDate": "Purchase Date",
+    "paymentMode": "Payment Mode",
+    "consumerId": "Consumer ID"
+  },
+  "actors": {
+    "farmer": "Farmer",
+    "processor": "Processor",
+    "distributor": "Distributor", 
+    "retailer": "Retailer",
+    "consumer": "Consumer"
+  },
+  "status": {
+    "active": "Active",
+    "sold": "Sold (Read-only)",
+    "readonly": "Read-only",
+    "exists": "Exists",
+    "verified": "Verified"
+  },
+  "price": {
+    "rupees": "₹",
+    "cost": "Cost Price",
+    "selling": "Selling Price",
+    "retail": "Retail Price"
+  },
+  "errors": {
+    "batchNotFound": "Batch not found",
+    "invalidBatch": "Invalid batch ID",
+    "requiredField": "This field is required",
+    "fetchError": "Failed to fetch data",
+    "createError": "Failed to create batch",
+    "updateError": "Failed to update data"
+  },
+  "success": {
+    "batchCreated": "Batch created successfully",
+    "dataAdded": "Data added successfully",
+    "batchSold": "Batch marked as sold"
+  }
+}

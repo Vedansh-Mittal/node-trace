@@ -1,0 +1,98 @@
+{
+  "app": {
+    "title": "ब्लॉकचेन ट्रेसेबिलिटी",
+    "subtitle": "अपरिवर्तनीय ब्लॉकचेन रिकॉर्ड के साथ पूरी आपूर्ति श्रृंखला के माध्यम से उत्पादों को ट्रैक करें"
+  },
+  "nav": {
+    "search": "बैच खोजें",
+    "create": "बैच बनाएं",
+    "qr": "QR स्कैनर",
+    "farmer": "किसान",
+    "processor": "प्रोसेसर",
+    "distributor": "वितरक",
+    "retailer": "रिटेलर",
+    "consumer": "उपभोक्ता"
+  },
+  "search": {
+    "title": "बैच इतिहास खोजें",
+    "subtitle": "अपनी पूरी आपूर्ति श्रृंखला यात्रा देखने के लिए बैच ID दर्ज करें",
+    "placeholder": "बैच ID दर्ज करें (जैसे BATCH-FARM-001)",
+    "button": "खोजें",
+    "searching": "खोज रहे हैं...",
+    "transactions": "लेनदेन",
+    "journey": "आपूर्ति श्रृंखला यात्रा"
+  },
+  "create": {
+    "title": "नया बैच बनाएं",
+    "subtitle": "नई आपूर्ति श्रृंखला यात्रा शुरू करें",
+    "button": "ब्लॉकचेन पर बैच बनाएं",
+    "success": "बैच सफलतापूर्वक बनाया गया"
+  },
+  "qr": {
+    "title": "QR कोड स्कैनर",
+    "subtitle": "उत्पाद ट्रेसेबिलिटी डेटा तक पहुंचने के लिए QR कोड स्कैन करें",
+    "enable": "कैमरा सक्षम करें",
+    "scanning": "QR कोड के लिए स्कैन कर रहे हैं...",
+    "generate": "QR कोड जेनरेट करें"
+  },
+  "fields": {
+    "batchId": "बैच ID",
+    "farmId": "फार्म ID",
+    "cropType": "फसल का प्रकार",
+    "quantity": "मात्रा (किग्रा)",
+    "harvestDate": "कटाई की तारीख",
+    "sellingPrice": "बिक्री मूल्य",
+    "costPrice": "लागत मूल्य",
+    "location": "भौगोलिक स्थान",
+    "processorId": "प्रोसेसर ID",
+    "processTypes": "प्रक्रिया प्रकार",
+    "inputBatch": "इनपुट बैच",
+    "outputQuantity": "आउटपुट मात्रा",
+    "processingDate": "प्रसंस्करण तिथि",
+    "distributorId": "वितरक ID",
+    "dispatchDate": "भेजने की तारीख",
+    "transportMode": "परिवहन मोड",
+    "destination": "गंतव्य",
+    "expiryDate": "समाप्ति तिथि",
+    "retailerId": "रिटेलर ID",
+    "shelfDate": "शेल्फ तारीख",
+    "retailPrice": "खुदरा मूल्य",
+    "retailLocation": "खुदरा स्थान",
+    "purchaseDate": "खरीद तारीख",
+    "paymentMode": "भुगतान मोड",
+    "consumerId": "उपभोक्ता ID"
+  },
+  "actors": {
+    "farmer": "किसान",
+    "processor": "प्रोसेसर",
+    "distributor": "वितरक",
+    "retailer": "रिटेलर",
+    "consumer": "उपभोक्ता"
+  },
+  "status": {
+    "active": "सक्रिय",
+    "sold": "बेचा गया (केवल पढ़ने के लिए)",
+    "readonly": "केवल पढ़ने के लिए",
+    "exists": "मौजूद है",
+    "verified": "सत्यापित"
+  },
+  "price": {
+    "rupees": "₹",
+    "cost": "लागत मूल्य",
+    "selling": "बिक्री मूल्य",
+    "retail": "खुदरा मूल्य"
+  },
+  "errors": {
+    "batchNotFound": "बैच नहीं मिला",
+    "invalidBatch": "अमान्य बैच ID",
+    "requiredField": "यह फील्ड आवश्यक है",
+    "fetchError": "डेटा लाने में विफल",
+    "createError": "बैच बनाने में विफल",
+    "updateError": "डेटा अपडेट करने में विफल"
+  },
+  "success": {
+    "batchCreated": "बैच सफलतापूर्वक बनाया गया",
+    "dataAdded": "डेटा सफलतापूर्वक जोड़ा गया",
+    "batchSold": "बैच को बेचा गया चिह्नित किया गया"
+  }
+}

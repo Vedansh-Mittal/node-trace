@@ -172,6 +172,32 @@ app.get("/api/batch/:batchId/status", async (req, res) => {
   }
 });
 
+// Demo seeding endpoint
+app.post("/api/demo/seed", async (req, res) => {
+  try {
+    const DemoSeeder = require("./demo-seed");
+    const seeder = new DemoSeeder();
+    const result = await seeder.seedDemoData();
+    res.json(result);
+  } catch (error) {
+    console.error("Demo seed error:", error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Demo correction endpoint
+app.post("/api/demo/correction", async (req, res) => {
+  try {
+    const DemoSeeder = require("./demo-seed");
+    const seeder = new DemoSeeder();
+    const result = await seeder.seedCorrectionExample();
+    res.json(result);
+  } catch (error) {
+    console.error("Demo correction error:", error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Verify certificate
 app.get("/api/certificate/:hash/verify", async (req, res) => {
   try {
