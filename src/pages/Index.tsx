@@ -1,4 +1,4 @@
-import EnhancedTraceabilityDashboard from "@/components/EnhancedTraceabilityDashboard";
+import { EnhancedTraceabilityDashboard } from "@/components/EnhancedTraceabilityDashboard";
 
 const Index = () => {
   return <EnhancedTraceabilityDashboard />;

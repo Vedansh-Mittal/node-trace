@@ -14,7 +14,163 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      batch_transactions: {
+        Row: {
+          actor_id: string
+          actor_type: string
+          batch_id: string
+          blockchain_hash: string | null
+          correction_of: string | null
+          cost_price: number | null
+          created_at: string
+          data: Json
+          id: string
+          previous_hash: string | null
+          selling_price: number | null
+          transaction_id: string
+        }
+        Insert: {
+          actor_id: string
+          actor_type: string
+          batch_id: string
+          blockchain_hash?: string | null
+          correction_of?: string | null
+          cost_price?: number | null
+          created_at?: string
+          data?: Json
+          id?: string
+          previous_hash?: string | null
+          selling_price?: number | null
+          transaction_id: string
+        }
+        Update: {
+          actor_id?: string
+          actor_type?: string
+          batch_id?: string
+          blockchain_hash?: string | null
+          correction_of?: string | null
+          cost_price?: number | null
+          created_at?: string
+          data?: Json
+          id?: string
+          previous_hash?: string | null
+          selling_price?: number | null
+          transaction_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "batch_transactions_actor_id_fkey"
+            columns: ["actor_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "batch_transactions_batch_id_fkey"
+            columns: ["batch_id"]
+            isOneToOne: false
+            referencedRelation: "batches"
+            referencedColumns: ["batch_id"]
+          },
+          {
+            foreignKeyName: "batch_transactions_correction_of_fkey"
+            columns: ["correction_of"]
+            isOneToOne: false
+            referencedRelation: "batch_transactions"
+            referencedColumns: ["transaction_id"]
+          },
+        ]
+      }
+      batches: {
+        Row: {
+          batch_id: string
+          blockchain_address: string | null
+          created_at: string
+          created_by_id: string
+          current_owner_id: string | null
+          current_status: string
+          id: string
+          qr_code_data: string | null
+          updated_at: string
+        }
+        Insert: {
+          batch_id: string
+          blockchain_address?: string | null
+          created_at?: string
+          created_by_id: string
+          current_owner_id?: string | null
+          current_status?: string
+          id?: string
+          qr_code_data?: string | null
+          updated_at?: string
+        }
+        Update: {
+          batch_id?: string
+          blockchain_address?: string | null
+          created_at?: string
+          created_by_id?: string
+          current_owner_id?: string | null
+          current_status?: string
+          id?: string
+          qr_code_data?: string | null
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "batches_created_by_id_fkey"
+            columns: ["created_by_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "batches_current_owner_id_fkey"
+            columns: ["current_owner_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          address: string | null
+          created_at: string
+          email: string
+          full_name: string | null
+          id: string
+          organization_name: string | null
+          phone: string | null
+          role: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          address?: string | null
+          created_at?: string
+          email: string
+          full_name?: string | null
+          id?: string
+          organization_name?: string | null
+          phone?: string | null
+          role: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          address?: string | null
+          created_at?: string
+          email?: string
+          full_name?: string | null
+          id?: string
+          organization_name?: string | null
+          phone?: string | null
+          role?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
